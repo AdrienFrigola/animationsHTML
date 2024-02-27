@@ -1,0 +1,108 @@
+/* Set the background color of the body */
+body {
+    background-color: white;
+}
+
+/* Define styles for the box element */
+#box {
+    width: 250px; /* Set the width of the box */
+    height: 250px; /* Set the height of the box */
+    background-color: hsl(0, 100%, 62%); /* Set the background color of the box */
+    font-size: 13em; /* Set the font size of the text inside the box */
+    text-align: center; /* Center-align the text inside the box */
+}
+
+/* Define animation styles for images */
+img {
+    animation-name: slideLeft; /* Set the animation name */
+    animation-duration: 2s; /* Set the duration of the animation */
+    animation-iteration-count: 1; /* Set the number of times the animation should repeat */
+    animation-direction: normal; /* Set the direction of the animation */
+    animation-play-state: running; /* Set the initial state of the animation */
+    animation-timing-function: cubic-bezier(0.22, 0.74, 0.79, 1.07); /* Set the timing function for the animation */
+}
+
+/* Define keyframes for sliding animation */
+@keyframes slideLeft {
+    from {
+        transform: translateX(300%);
+    }
+}
+
+/* Define keyframes for sliding animation to the right */
+@keyframes slideRight {
+    from {
+        transform: translateX(300%);
+    }
+}
+
+/* Define keyframes for sliding animation upwards */
+@keyframes slideUp {
+    from {
+        transform: translateY(300%);
+    }
+}
+
+/* Define keyframes for sliding animation downwards */
+@keyframes slideDown {
+    from {
+        transform: translateY(300%);
+    }
+}
+
+/* Define keyframes for rotation animation */
+@keyframes rotate {
+    25% {
+        transform: rotateZ(360deg);
+    }
+}
+
+/* Define keyframes for growing animation */
+@keyframes grow {
+    50% {
+        transform: scale(2, 2);
+    }
+}
+
+/* Define keyframes for shrinking animation */
+@keyframes shrink {
+    50% {
+        transform: scale(0.5, 0.5);
+    }
+}
+
+/* Define keyframes for fading animation */
+@keyframes fade {
+    100% {
+        opacity: 0;
+    }
+}
+
+/* Define keyframes for color change animation */
+@keyframes colorChange {
+    0% {
+        background-color: hsl(0, 100%, 62%);
+    }
+    20% {
+        background-color: hsl(35, 100%, 62%);
+    }
+    40% {
+        background-color: hsl(65, 100%, 62%);
+    }
+    60% {
+        background-color: hsl(100, 100%, 62%);
+    }
+    80% {
+        background-color: hsl(200, 100%, 62%);
+    }
+    100% {
+        background-color: hsl(270, 100%, 62%);
+    }
+}
+
+/* Define keyframes for glowing effect */
+@keyframes glow {
+    50% {
+        box-shadow: 0px 0px 50px hsl(65, 100%, 62%);
+    }
+}
